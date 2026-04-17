@@ -23,7 +23,7 @@ app = FastAPI(title="GoldAssess AI")
 # Allow frontend to connect
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["https://gold-assess-ai-2.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
