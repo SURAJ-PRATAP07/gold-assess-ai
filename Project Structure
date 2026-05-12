@@ -1,0 +1,20 @@
+gold-assess-ai/
+├── backend/
+│   ├── app/
+│   │   ├── main.py                  # FastAPI server
+│   │   └── models/
+│   │       └── vision/
+│   │           ├── classifier.py    # Jewelry type + purity
+│   │           ├── hallmark.py      # BIS detection
+│   │           └── weight.py        # Weight estimation
+│   ├── Dockerfile
+│   └── requirements.txt
+├── frontend/
+│   ├── app/
+│   │   ├── page.tsx                 # Landing page
+│   │   └── assess/page.tsx          # Assessment flow
+│   └── components/
+│       ├── ImageUploader.tsx
+│       ├── AudioRecorder.tsx
+│       └── ResultsCard.tsx
+└── README.md
