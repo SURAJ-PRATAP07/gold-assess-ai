@@ -1,0 +1,72 @@
+
+---
+
+## ✨ Features
+
+### 🔍 AI Assessment
+- **Jewelry Type Detection**: Chain, Ring, Bangle, Necklace, Earring, Pendant, Mangalsutra
+- **Purity Analysis**: 24K, 22K, 18K, 14K, 10K classification
+- **Weight Estimation**: ±20% accuracy from photos
+- **Hallmark Detection**: BIS logo + 916/750/585 stamp verification
+- **Hollow Detection**: Identifies hollow vs solid jewelry
+
+### 💰 Financial Intelligence
+- **Real-time Gold Pricing**: Live API integration
+- **Market Value Calculation**: Accurate ₹INR valuation
+- **Loan Eligibility**: Instant 75% LTV calculation
+- **EMI Estimation**: Monthly payment breakdown
+
+### 🛡️ Risk & Fraud Detection
+- **Multi-Image Consensus**: Cross-validates across photos
+- **Image Quality Check**: Brightness, blur, resolution validation
+- **Consistency Verification**: Cross-signal fraud detection
+- **Wear & Tear Analysis**: Surface condition assessment
+
+### 🎨 User Experience
+- **Drag & Drop Upload**: Intuitive image uploading
+- **Audio Recording**: Built-in tap-test recorder
+- **Instant Results**: <5 second processing
+- **Beautiful Dashboard**: Responsive Tailwind CSS UI
+
+---
+
+## 🏗️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| **Frontend** | Next.js 14, TypeScript, Tailwind CSS, shadcn/ui |
+| **Backend** | FastAPI, Python 3.11 |
+| **Computer Vision** | OpenCV, Pillow, NumPy, SciPy |
+| **Deep Learning** | PyTorch, EfficientNet |
+| **Audio Processing** | Librosa, SoundFile |
+| **Database** | Supabase (PostgreSQL + pgvector) |
+| **Deployment** | Vercel (Frontend), Railway (Backend) |
+| **CI/CD** | GitHub Actions |
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.11+
+- Node.js 18+
+- Git
+
+### Local Development
+
+```bash
+# Clone the repository
+git clone https://github.com/SURAJ-PRATAP07/gold-assess-ai.git
+cd gold-assess-ai
+
+# Backend Setup
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python -m uvicorn app.main:app --reload --port 8000
+
+# Frontend Setup (new terminal)
+cd frontend
+npm install
+npm run dev
